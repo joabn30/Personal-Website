@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaquaries.css" />
+    <script src="https://kit.fontawesome.com/d3a6fe1ce9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Joab Nyabuto</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Joab Nyabuto</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="togglemenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="togglemenu()">About</a></li>
+                <li><a href="#experience" onclick="togglemenu()">Experience</a></li>
+                <li><a href="#projects" onclick="togglemenu()">Projects</a></li>
+                <li><a href="#contact" onclick="togglemenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+   
+    <section id="profile">
+        <div class="section__pi-container">
+            <img src="Assets/picture1.jpg" alt="Joab Nyabuto profile picture" class="profile_img"/> <!-- Fixed class name -->
+            <div class="section__text">
+                <p class="section__text__p1">Hello, I'm</p>
+                <h1 class="title">Joab Nyabuto</h1>
+                <p class="section_text_p2">Software Engineer</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="window.open('./Assets/JOAB_O_NYABUTO-OFFICIAL-SWE-RESUME (2).pdf')">Download CV</button>
+                    <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact info</button>
+                </div>
+                <div id="social-container">
+                    <i class="fab fa-linkedin icon" onclick="location.href='https://linkedin.com/in/joab-nyabuto-404192278'"></i>
+                    <i class="fab fa-github icon" onclick="location.href='https://github.com/'"></i>
+                </div>
+            </div>
+        </div>
+        <i class="fas fa-arrow-right icon arrow" onclick="location.href ='./profile'"></i>
+    </section>
+    
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="Assets/About.jpg" alt="Profile picture" class="about-pic" />
+            </div>
+            <div class="about-details-container">
+                <div class="about-container">
+                    <div class="details-container">
+                        <i class="fas fa-briefcase icon"></i>
+                        <h3>Experience</h3>
+                        <p>2+ years <br />Programming</p>
+                    </div>
+                    <div class="details-container">
+                
+                        <i class="fas fa-graduation-cap icon"></i>
+                        <h3>Education</h3>
+                        <p>A.Sc Computer information Systems <br />A.Sc Computer Science  <br /> A.Sc Engineering</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>My name is Joab Nyabuto, and I am currently a junior at Metropolitan State University, pursuing a degree in Computer Science. 
+                        With a passion for software development and database management, I have worked on various projects ranging from designing a relational database
+                        to developing responsive web pages using HTML, CSS, and JavaScript. I have a solid foundation in Java programming and problem-solving, 
+                        demonstrated through projects involving complex algorithms and data handling.As I grow my technical skills, I look forward to contributing to
+                         innovative solutions and tackling problems in enterprise architecture and software development. 
+                         I am a highly motivated individual who thrives in collaborative environments and is always eager to learn new technologies and refine my skills
+                        </p>
+                </div>
+            </div>
+        </div>
+        <i class="fas fa-arrow-right icon arrow" onclick="location.href ='./experience'"></i>
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container"> <!-- Fixed case sensitivity -->
+            <div class="about-container">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h3>SASS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h3>Javascript</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h3>Typescript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Backend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h3>SQL</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h3>Node.js</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h3>Java</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h3>Python</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h3>C/C++</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h3>C#</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h3>Git</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <i class="fas fa-arrow-right icon arrow" onclick="location.href ='./experience'"></i>
+    </section>
+    
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container"> <!-- Fixed case sensitivity -->
+            <div class="about-container">
+                <!-- Project 1 -->
+                <div class="color-container"> <!-- Fixed class name -->
+                    <div class="article-container">
+                        <img src="Assets/Project1 (2).jpg" alt="Project 1" class="project-img" />
+                        <h2 class="project-title">Responsive Website</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/joabn30/Personal-Website'">Github</button>
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/joabn30/Personal-Website'">Live Demo</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="color-container"> <!-- Fixed class name -->
+                    <div class="article-container">
+                        <img src="Assets/Project2.jpg" alt="Project 2" class="project-img" />
+                        <h2 class="project-title">Cashier Line Algorithm</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/joabn30/First_Project'">Github</button>
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/joabn30/First_Project'">Live Demo</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="color-container"> <!-- Fixed class name -->
+                    <div class="article-container">
+                        <img src="Assets/Project3.jpg" alt="Project 3" class="project-img" />
+                        <h2 class="project-title">Car Dealership database</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/joabn30/Car-Dealership-Database'">Github</button>
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/joabn30/Car-Dealership-Database'">Live Demo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+        <section id="Contact">
+            <p class="section__text__p1">Get in Touch</p>
+            <h1 class="title">Contact Me</h1>
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                    <img src="./Assets/email.png" alt="Email icon" class="icon contact-icon" />
+                    <p><a href="mailto:joabonyabuto@gmail.com">joabonyabuto@gmail.com</a></p>
+                </div>
+                <div class="contact-info-container">
+                    <img src="./Assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+                    <p><a href="https://linkedin.com/in/joab-nyabuto-404192278" target="_blank">LinkedIn</a></p>
+                </div>
+            </div>
+        </section>
+         
+
+    
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+
+<ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Joab Nyabuto. All RIghts Researved.</p>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
